@@ -9,9 +9,9 @@ function TeamCard(props) {
   return (
     <div className="w-[20vw] rounded-[6px] shadow-lg">
       <div className="image">
-        <img src={img} style={{ width: "20vw", height: "45vh" }} className="rounded-t-[6px]"/>
+        <img src={img} style={{ width: "20vw", height: "42vh" }} className="rounded-t-[6px]"/>
       </div>
-      <div className="pt-3 pl-4 pb-2">
+      <div className="pt-3 pl-4 pb-2 pr-4">
         <div className="font-semibold text-lg">{name}</div>
         <div className="text-[#999999] text-sm">Student</div>
         <div className="mt-2">
