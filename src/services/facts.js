@@ -1,6 +1,7 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 const openAiKey = import.meta.env.VITE_OPEN_AI_API_KEY;
+// console.log(openAiKey)
 
 export const factsApi = createApi({
   reducerPath: "factsApi",

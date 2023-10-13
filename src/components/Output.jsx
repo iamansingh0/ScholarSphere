@@ -10,6 +10,7 @@ import {
 } from "../assets";
 import { useGetFactsMutation } from "../services/facts";
 import toast from "react-hot-toast";
+import { SideCol } from "./SideCol";
 
 const huggingFaceToken = import.meta.env.VITE_HUGGING_FACE_TOKEN;
 
@@ -114,9 +115,11 @@ const Output = () => {
   };
 
   return (
-    <section
+    <div className="flex w-full justify-between mb-[40vh]">
+      <SideCol side="left" />
+      <section
       id="visualizer"
-      className="mt-16 md:max-w-xl max-w-md md:w-[576px] w-full"
+      className="mt-16 md:max-w-xl max-w-md md:w-[576px] w-full -mt-[5vh]"
     >
       <div>
           <h1 className="head_text">
@@ -130,7 +133,7 @@ const Output = () => {
             entertain your imagination!
           </h2>
         </div>
-      <div className="flex flex-col w-full gap-2">
+      <div className="flex flex-col w-full gap-2 mt-[10vh]">
         <form
           className="relative flex justify-center items-center w-full"
           onSubmit={handleSubmit}
@@ -250,6 +253,8 @@ const Output = () => {
         </div>
       </div>
     </section>
+    <SideCol side="right" />
+    </div>
   );
 };
 

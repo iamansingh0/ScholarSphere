@@ -6,8 +6,13 @@
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
 
+body {
+  min-height: 100vh;
+  width: 100vw;
+}
+
 .main {
-  height: 93.4vh;
+  min-height: 93.5vh;
   position: relative;
   display: flex;
   justify-content: center;

@@ -5,12 +5,12 @@ import {BiLogoInstagramAlt} from "react-icons/bi"
 
 const Footer = () => {
   return (
-    <div className="bg-[#171717] w-[100vw] absolute bottom-0 h-[25vh] flex flex-col items-center pt-3.5 text-white">
-      <h1 className="text-lg font-semibold">ScholarSphere</h1>
+    <div className="bg-[#171717] w-[100vw] absolute bottom-0 h-[25vh] flex flex-col items-center pt-6 text-white">
+      <h1 className="text-xl font-semibold">ScholarSphere</h1>
       <div className="links flex gap-4 p-2.5">
-        <a href="https://github.com/iamansingh0" target="_blank"><BsGithub size={25}/></a>
-        <a href="https://www.linkedin.com/in/aman-kumar-singh-08b2b220b/" target="_blank"><BsLinkedin size={25}/></a>
-        <a href="https://www.instagram.com/iaman._1/" target="_blank"><BiLogoInstagramAlt size={25}/></a>
+        <a href="https://github.com/iamansingh0" target="_blank" className="hover:bg-[#EA580C] rounded-full"><BsGithub size={25}/></a>
+        <a href="https://www.linkedin.com/in/aman-kumar-singh-08b2b220b/" target="_blank" className="hover:bg-[#EA580C] rounded-full"><BsLinkedin size={25}/></a>
+        <a href="https://www.instagram.com/iaman._1/" target="_blank" className="hover:bg-[#EA580C] rounded-full"><BiLogoInstagramAlt size={25}/></a>
       </div>
       <div className="mb-4">
       Made with &nbsp;

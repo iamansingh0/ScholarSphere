@@ -16,7 +16,7 @@ const Hero = () => {
   };
 
   return (
-    <header className="hero_header overflow-hidden">
+    <header className="hero_header overflow-hidden -mt-[4vh]">
       <nav className="w-full" style={{display: 'flex', justifyContent:'space-between', alignItems:'center', height: '12vh'}}>
         <h3 className="font-semibold cursor-pointer"
         onClick={() => handleNavigation("home")}
@@ -42,8 +42,8 @@ const Hero = () => {
         </div>
       </nav>
       {currentPage === "home" && (
-        <div>
-          <h1 className="head_text">
+        <div className="">
+          <h1 className="head_text ">
           Bridging Learning Gaps with 
             <br className="max-md:hidden" />
             <span className="orange_gradient">&nbsp;Visual Mastery</span>
@@ -55,7 +55,7 @@ const Hero = () => {
           </h2>
         </div>
       )}
-      {currentPage === "about" && <About />}
+      {currentPage === "about" && <About /> }
       {currentPage === "generate" && <Output />}
       <Footer />
     </header>
