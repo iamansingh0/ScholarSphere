@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { love } from "../assets";
+import {BsGithub,BsLinkedin} from "react-icons/bs"
+import {BiLogoInstagramAlt} from "react-icons/bi"
 
 const Footer = () => {
   return (
-    <div className="bg-[#171717] w-[100vw] absolute bottom-0 h-[25vh] flex flex-col items-center pt-6 text-white">
+    <div className="bg-[#171717] w-[100vw] absolute bottom-0 h-[25vh] flex flex-col items-center pt-3.5 text-white">
       <h1 className="text-lg font-semibold">ScholarSphere</h1>
-      <div className="links flex border-4 gap-4">
-        <p>hi</p>
-        <p>hi</p>
-        <p>hi</p>
+      <div className="links flex gap-4 p-2.5">
+        <a href="https://github.com/iamansingh0" target="_blank"><BsGithub size={25}/></a>
+        <a href="https://www.linkedin.com/in/aman-kumar-singh-08b2b220b/" target="_blank"><BsLinkedin size={25}/></a>
+        <a href="https://www.instagram.com/iaman._1/" target="_blank"><BiLogoInstagramAlt size={25}/></a>
       </div>
-      <button>About Us</button>
       <div className="mb-4">
       Made with &nbsp;
       <img
@@ -18,7 +19,7 @@ const Footer = () => {
         alt="Love"
         className="inline h-4 w-4 object-contain mt-[-4px]"
       />
-      &nbsp; by TechMinds
+      &nbsp; by Aman&Japmann
     </div>
     </div>
   );
